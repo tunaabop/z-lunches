@@ -2,8 +2,8 @@
 # 💿 GO-TO ORDERS
 
 ✶ a minimal web app for saving favorite restaurants & go-to orders ✶  
-✶ pink + black y2k porsche energy ✶  
-✶ built for iphone safari ✶  
+✶ pink + black energy ✶  
+✶ fully PWA-ready & installable on iPhone Safari.✶  
 
 ━━━━━━━━━━━━━━━━━━━━━━━  
 ✨ cute • fast • personal ✨  
@@ -60,3 +60,10 @@ think: *sports car dashboard, but cute.*
 ```bash
 git clone https://github.com/YOUR_USERNAME/go-to-orders.git
 cd go-to-orders
+
+
+## Install on iPhone
+1. Open Safari → go to app URL (local IP or GitHub Pages).
+2. Tap Share → Add to Home Screen.
+3. Name it Lunch Ideas → Tap Add.
+The app now opens full screen, like a native app.
