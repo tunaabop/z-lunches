@@ -1,55 +1,65 @@
-# 💿 Go-To Orders
+<p align="center">
+  <img src="assets/banner.png" alt="Go-To Orders banner" />
+</p>
 
-A minimal, mobile-first web app for saving my favorite restaurants and go-to orders.  
-Designed with **pink + black Porsche vibes**, built with **React**, and optimized for **iOS Safari**.
+# 💿 GO-TO ORDERS
 
-✨ Cute. Fast. Personal.
+✶ a minimal web app for saving favorite restaurants & go-to orders ✶  
+✶ pink + black y2k porsche energy ✶  
+✶ built for iphone safari ✶  
 
----
+━━━━━━━━━━━━━━━━━━━━━━━  
+✨ cute • fast • personal ✨  
+━━━━━━━━━━━━━━━━━━━━━━━  
 
-## 🖤 Features
+## 🖤 WHAT IT DOES
 
-- Save restaurants and your go-to orders
-- Optional notes (mods, favorites, reminders)
-- Local storage (no accounts, no backend)
-- Mobile-first UI
-- Installable on iPhone (Add to Home Screen)
-- Minimal Y2K-inspired design
+✦ save restaurants you love  
+✦ remember exactly what to order  
+✦ keep notes (mods, sauces, vibes)  
+✦ no accounts, no ads, no noise  
 
----
-
-## 💗 Tech Stack
-
-- React (Create React App)
-- CSS (custom Y2K theme)
-- LocalStorage for persistence
-- GitHub Pages for deployment
+everything stays on *your* device.
 
 ---
 
-## 📱 iOS Friendly
+## 💗 TECH STACK
 
-- Works in Safari
-- Add to Home Screen supported
-- Feels like a native app
-- Data stays on your device
-
----
-
-## 🎨 Design Direction
-
-- Pink & black color palette
-- Glossy, minimal UI
-- Rounded elements
-- Subtle glow accents
-- Y2K / Porsche-inspired aesthetic
+╭────────────────────╮  
+│ React (CRA)        │  
+│ CSS (custom theme) │  
+│ LocalStorage       │  
+│ GitHub Pages       │  
+╰────────────────────╯  
 
 ---
 
-## 🚀 Getting Started
+## 📱 IOS FRIENDLY
 
-### 1. Clone the repo
+✔ works in mobile safari  
+✔ add to home screen  
+✔ full-screen app feel  
+✔ data persists locally  
 
+designed mobile-first.
+
+---
+
+## 🎨 DESIGN DIRECTION
+
+✶ pink + black palette  
+✶ glossy dark UI  
+✶ soft glow accents  
+✶ rounded forms  
+✶ early-2000s luxury web vibes  
+
+think: *sports car dashboard, but cute.*
+
+---
+
+## 🚀 GETTING STARTED
+
+### ⟡ clone the repo
 ```bash
 git clone https://github.com/YOUR_USERNAME/go-to-orders.git
 cd go-to-orders
