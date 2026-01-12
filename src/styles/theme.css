@@ -1,109 +1,155 @@
-/* ------------------- General App Styles ------------------- */
+/* ========================================
+   Lunch Ideas Theme CSS
+   Black + Metallic + Subtle Pink
+   Retro / Tech Vibe
+   ----------------------------------------
+   Author: tunaabop
+   Date: 2026-01-12
+   Notes: 
+   - Sleek black + metallic foundation.
+   - Pink only as accent (buttons, hover, highlights).
+   - Typography: clean modern body, retro-tech headers.
+   - Hover effects to give energy without being neon.
+   - Optional subtle grid pattern for tech-inspired feel.
+======================================== */
+
+/* -------------------------
+   1. Color Variables
+   Using CSS variables makes it easy to tweak the theme
+------------------------- */
+:root {
+  /* Main app background */
+  --bg-color: #0F0F0F;          /* Deep black anchors the design, readable on iPhone Safari */
+  
+  /* Card backgrounds */
+  --card-bg: #1C1C1C;           /* Charcoal for cards, slightly lighter than background for contrast */
+  
+  /* Primary accent */
+  --primary-pink: #FF77A9;      /* Soft neon pink used sparingly for highlights, buttons, hover glow */
+  
+  /* Metallic accent */
+  --metallic: #C0C0C0;          /* Silver for borders, shadows, subtle techy feel */
+  
+  /* Text colors */
+  --text-primary: #E6E6FA;      /* Lavender-silver for readable main text on dark backgrounds */
+  --text-secondary: #AAAAAA;    /* Gray for secondary info like order details */
+}
+
+/* -------------------------
+   2. Body / Global
+------------------------- */
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #100010; /* dark, not pure black */
-  color: #ff66b2; /* soft pink for text */
+  font-family: 'Poppins', sans-serif;   /* Modern, clean body font */
+  background-color: var(--bg-color);    /* Dark background anchors the app */
+  color: var(--text-primary);           /* Default text color */
   margin: 0;
   padding: 0;
+  line-height: 1.5;
 }
 
-.app-container {
-  max-width: 480px; /* iPhone-friendly */
-  margin: 0 auto;
-  padding: 1rem;
+/* Optional subtle grid pattern to give tech-inspired feel */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background-image: linear-gradient(0deg, rgba(192,192,192,0.05) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(192,192,192,0.05) 1px, transparent 1px);
+  background-size: 40px 40px; /* grid spacing */
+  pointer-events: none;        /* doesn’t block clicks */
+  z-index: 0;
 }
 
-h1 {
+/* -------------------------
+   3. Header / Nav
+   - Gradient adds subtle depth.
+   - Pink header text for retro-tech feel.
+------------------------- */
+header {
+  background: linear-gradient(90deg, var(--bg-color), var(--card-bg));
+  padding: 16px;
+  border-bottom: 2px solid var(--metallic);
+  font-family: 'Orbitron', sans-serif;  /* Retro-tech font for headings */
+  color: var(--primary-pink);           /* Pink for pop/retro accent */
+  font-size: 24px;
   text-align: center;
-  font-size: 2rem;
-  text-shadow: 1px 1px 0 #1a001a; /* soft shadow instead of harsh black */
-  font-family: 'Arial Black', sans-serif;
+  z-index: 1;
+  position: relative;
 }
 
-/* ------------------- Restaurant Card ------------------- */
+/* -------------------------
+   4. Restaurant Card
+   - Charcoal background, metallic borders.
+   - Subtle shadow for 3D effect.
+   - Hover glow pink for interactive feedback.
+------------------------- */
 .restaurant-card {
-  background: linear-gradient(145deg, #ffc0cb, #ff99cc); /* softer pinks */
-  padding: 1rem;
-  border-radius: 14px;
-  margin-bottom: 1rem;
-  box-shadow: 0 2px 8px rgba(255, 105, 180, 0.3); /* soft glow */
-  color: #1a001a; /* dark purple/black text */
+  background-color: var(--card-bg);
+  border: 2px solid var(--metallic);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px;
+  color: var(--text-primary);
+  box-shadow: 0 0 5px var(--metallic);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  z-index: 1;
 }
 
+.restaurant-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 10px var(--primary-pink); /* Hover glow indicates interactivity */
+}
+
+/* Card heading uses retro-tech font + pink accent */
 .restaurant-card h2 {
-  margin-top: 0;
-  text-shadow: 1px 1px 0 #1a001a;
-  font-family: 'Arial Black', sans-serif;
+  font-family: 'Orbitron', sans-serif;
+  color: var(--primary-pink);
+  margin: 0 0 10px 0;
 }
 
-/* ------------------- Input Fields ------------------- */
-input {
-  padding: 0.5rem;
+/* Card details in secondary color for hierarchy */
+.restaurant-card p {
+  color: var(--text-secondary);
+  margin: 0 0 12px 0;
+}
+
+/* -------------------------
+   5. Buttons
+   - Metallic → pink gradient for tech accent.
+   - Dark text for contrast.
+   - Hover scale + pink glow adds interactivity.
+------------------------- */
+.copy-button {
+  background: linear-gradient(135deg, var(--metallic), var(--primary-pink));
+  color: var(--bg-color);
   border-radius: 8px;
-  border: 2px solid #ff99cc;
-  background-color: #ffe6f0;
-  color: #1a001a;
-  outline: none;
-}
-
-.input-row {
-  display: flex;
-  margin-top: 0.5rem;
-}
-
-.input-row input {
-  flex: 1;
-  margin-right: 0.5rem;
-}
-
-/* ------------------- Buttons ------------------- */
-.glossy-btn {
-  background: linear-gradient(145deg, #ffb6c1, #ff99cc); /* softer pink gradient */
-  border: none;
-  padding: 0.6rem 1rem;
-  border-radius: 10px;
-  font-weight: bold;
-  color: #1a001a; /* dark text instead of black */
+  padding: 10px 16px;
+  font-family: 'Orbitron', sans-serif;  /* Retro-tech font for buttons */
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(255, 105, 180, 0.3);
-  transition: all 0.2s ease;
+  border: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.glossy-btn:hover {
+.copy-button:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(255, 105, 180, 0.4);
+  box-shadow: 0 0 8px var(--primary-pink);
 }
 
-/* Copy All Orders Button */
-.copy-all {
-  margin-top: 0.5rem;
-  width: 100%;
-}
+/* -------------------------
+   6. Utility Classes
+   - Optional classes for text colors, can be applied anywhere
+------------------------- */
+.text-primary { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
 
-/* ------------------- Order List ------------------- */
-ul {
-  padding-left: 1.2rem;
-}
-
-li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.4rem;
-  background-color: #ffe6f0; /* soft pink list item bg */
-  border-radius: 6px;
-  padding: 0.3rem 0.5rem;
-}
-
-li button {
-  background: none;
-  border: none;
-  color: #1a001a;
-  cursor: pointer;
-  font-size: 1rem;
-  margin-left: 0.3rem;
-}
-
-li button:hover {
-  color: #ff99cc; /* subtle pink hover */
-}
+/* ========================================
+   Thought Process / Design Notes:
+   - Goal: sleek, retro-tech vibe without neon overload.
+   - Background: deep black to make cards/buttons pop.
+   - Cards: slightly lighter charcoal to separate content visually.
+   - Pink: used sparingly to maintain energy and highlight interactions.
+   - Metallic: subtle silver borders/shadows create “Porsche” high-tech feel.
+   - Typography: Poppins for readability, Orbitron for retro-tech headings/buttons.
+   - Hover effects: pink glow indicates interactable elements.
+   - Grid pattern: optional, adds subtle tech-inspired texture without distracting.
+======================================== */
