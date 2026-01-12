@@ -58,7 +58,7 @@ think: *sports car dashboard, but cute.*
 
 ### ⟡ clone the repo
 ```bash
-git clone https://github.com/YOUR_USERNAME/go-to-orders.git
+git clone https://github.com/tunaabop/go-to-orders.git
 cd go-to-orders
 ```
 
