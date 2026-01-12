@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/go-to-orders/static/css/main.7fb45918.css",
+    "main.js": "/go-to-orders/static/js/main.7009c11c.js",
+    "index.html": "/go-to-orders/index.html",
+    "main.7fb45918.css.map": "/go-to-orders/static/css/main.7fb45918.css.map",
+    "main.7009c11c.js.map": "/go-to-orders/static/js/main.7009c11c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7fb45918.css",
+    "static/js/main.7009c11c.js"
+  ]
+}
