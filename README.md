@@ -1,5 +1,5 @@
 
-# 💿 GO-TO ORDERS
+# 💿 Z Lunches
 
 ✶ a minimal web app for saving favorite restaurants & go-to orders ✶  
 ✶ pink + black energy ✶  
