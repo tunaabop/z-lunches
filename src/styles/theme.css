@@ -1,0 +1,109 @@
+/* ------------------- General App Styles ------------------- */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #100010; /* dark, not pure black */
+  color: #ff66b2; /* soft pink for text */
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 480px; /* iPhone-friendly */
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: 1px 1px 0 #1a001a; /* soft shadow instead of harsh black */
+  font-family: 'Arial Black', sans-serif;
+}
+
+/* ------------------- Restaurant Card ------------------- */
+.restaurant-card {
+  background: linear-gradient(145deg, #ffc0cb, #ff99cc); /* softer pinks */
+  padding: 1rem;
+  border-radius: 14px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(255, 105, 180, 0.3); /* soft glow */
+  color: #1a001a; /* dark purple/black text */
+}
+
+.restaurant-card h2 {
+  margin-top: 0;
+  text-shadow: 1px 1px 0 #1a001a;
+  font-family: 'Arial Black', sans-serif;
+}
+
+/* ------------------- Input Fields ------------------- */
+input {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 2px solid #ff99cc;
+  background-color: #ffe6f0;
+  color: #1a001a;
+  outline: none;
+}
+
+.input-row {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.input-row input {
+  flex: 1;
+  margin-right: 0.5rem;
+}
+
+/* ------------------- Buttons ------------------- */
+.glossy-btn {
+  background: linear-gradient(145deg, #ffb6c1, #ff99cc); /* softer pink gradient */
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #1a001a; /* dark text instead of black */
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(255, 105, 180, 0.3);
+  transition: all 0.2s ease;
+}
+
+.glossy-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(255, 105, 180, 0.4);
+}
+
+/* Copy All Orders Button */
+.copy-all {
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+/* ------------------- Order List ------------------- */
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
+  background-color: #ffe6f0; /* soft pink list item bg */
+  border-radius: 6px;
+  padding: 0.3rem 0.5rem;
+}
+
+li button {
+  background: none;
+  border: none;
+  color: #1a001a;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 0.3rem;
+}
+
+li button:hover {
+  color: #ff99cc; /* subtle pink hover */
+}

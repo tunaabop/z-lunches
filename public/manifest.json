@@ -1,0 +1,8 @@
+{
+  "short_name": "LunchIdeas",
+  "name": "Lunch Ideas",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ff69b4",
+  "background_color": "#100010"
+}

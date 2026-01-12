@@ -1,62 +1,70 @@
+# Getting Started with Create React App
 
-# 💿 GO-TO ORDERS
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-✶ a minimal web app for saving favorite restaurants & go-to orders ✶  
-✶ pink + black y2k porsche energy ✶  
-✶ built for iphone safari ✶  
+## Available Scripts
 
-━━━━━━━━━━━━━━━━━━━━━━━  
-✨ cute • fast • personal ✨  
-━━━━━━━━━━━━━━━━━━━━━━━  
+In the project directory, you can run:
 
-## 🖤 WHAT IT DOES
+### `npm start`
 
-✦ save restaurants you love  
-✦ remember exactly what to order  
-✦ keep notes (mods, sauces, vibes)  
-✦ no accounts, no ads, no noise  
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-everything stays on *your* device.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
----
+### `npm test`
 
-## 💗 TECH STACK
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-╭────────────────────╮  
-│ React (CRA)        │  
-│ CSS (custom theme) │  
-│ LocalStorage       │  
-│ GitHub Pages       │  
-╰────────────────────╯  
+### `npm run build`
 
----
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## 📱 IOS FRIENDLY
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-✔ works in mobile safari  
-✔ add to home screen  
-✔ full-screen app feel  
-✔ data persists locally  
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-designed mobile-first.
+### `npm run eject`
 
----
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## 🎨 DESIGN DIRECTION
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-✶ pink + black palette  
-✶ glossy dark UI  
-✶ soft glow accents  
-✶ rounded forms  
-✶ early-2000s luxury web vibes  
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-think: *sports car dashboard, but cute.*
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
----
+## Learn More
 
-## 🚀 GETTING STARTED
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### ⟡ clone the repo
-```bash
-git clone https://github.com/YOUR_USERNAME/go-to-orders.git
-cd go-to-orders
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
