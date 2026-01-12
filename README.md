@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.png" alt="Go-To Orders banner" />
+  <img src="banner.png" alt="Go-To Orders banner" />
 </p>
 
 # 💿 GO-TO ORDERS
